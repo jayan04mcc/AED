@@ -134,30 +134,29 @@ int main(){
 */
 // PRUEBAS DE LA TABLA HASH
 int main(){
-    cout<<"pruebas con usuarios"<<endl;
-    HashTable<int, User> pruebas(10);
-    User e1("martin", "martin@unsa.edu.pe");
-    User e2("matias", "matias@unsa.edu.pe");
-    User e3("daniela", "dani@gmail.com");
-    User e4("pricsila", "1029@gmail.com");
-    User e5("marcos", "john12@gmail.com");
-
-    pruebas.insertData(20213414, e1);
-    pruebas.insertData(20218314, e2);
-    pruebas.insertData(20212134, e3);
-    pruebas.insertData(20228123, e4);
-    pruebas.insertData(20192341, e5);
-    pruebas.displayHash();
-    cout<<"**********************************"<<endl;
     cout<<"pruebas con robots"<<endl;
     HashTable<int,Robot> robotPruebas(5);
     Robot a1(111,"bender");
     Robot a2(122,"cyborg");
     Robot a3(133,"terminator");
-
     robotPruebas.insertData(992,a1);
     robotPruebas.insertData(345,a2);
     robotPruebas.insertData(765,a3);
     robotPruebas.displayHash();
+    cout<<"**********************************"<<endl;
+    cout<<"pruebas con usuarios"<<endl;
+    HashTable<int, User> pruebas(8);
+    User p1("martin", "martin@unsa.edu.pe");
+    User p2("matias", "matias@unsa.edu.pe");
+    User p3("daniela", "dani@gmail.com");
+    User p4("pricsila", "1029@gmail.com");
+    User p5("marcos", "john12@gmail.com");
+    pruebas.insertData(1111, p1);
+    pruebas.insertData(5325, p2);
+    pruebas.insertData(5642, p3);
+    pruebas.insertData(2353, p4);
+    pruebas.insertData(7642, p5);
+    pruebas.displayHash();
+    cout<<"**********************************"<<endl;
     return 0;
 }
